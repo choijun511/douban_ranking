@@ -50,6 +50,8 @@ def main():
         save_db(result)
         start += LIMIT
         time.sleep(10)
+    cursor.close()
+    db.close()
     print('scawl success!')
 
 
